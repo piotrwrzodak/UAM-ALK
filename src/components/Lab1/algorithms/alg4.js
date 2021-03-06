@@ -1,6 +1,10 @@
 const alg4 = (n) => {
-  let array = generateBinaryArrays(n);
   let finalSet = [];
+  if (n === 0) {
+    finalSet.push(finalSet);
+    return finalSet;
+  }
+  let array = generateBinaryArrays(n);
   let auxiliaryArray;
 
   array.map((a) => {
