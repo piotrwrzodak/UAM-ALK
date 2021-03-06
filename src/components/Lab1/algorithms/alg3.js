@@ -6,8 +6,8 @@ const alg3 = (n, k) => {
 
   while (true) {
     i = n - 1;
-    if (array[i] === k - n + i) {
-      while (array[i] === k - n + i) {
+    if (array[i] === k - n + i + 1) {
+      while (array[i] === k - n + i + 1) {
         i--;
       }
       if (i < 0) break;
