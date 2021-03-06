@@ -60,6 +60,22 @@
   width: auto;
   padding: 5px;
   height: 40px;
-  background-color: seagreen;
+  background-color: rgb(46, 139, 87);
   color: #fff;
+  cursor: pointer;
+}
+
+.output-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: auto;
+  background-color: rgba(46, 139, 87, 0.2);
+}
+
+.output-list__item {
+  margin: 3px;
+  font-size: 0.7rem;
 }

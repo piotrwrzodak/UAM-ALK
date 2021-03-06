@@ -7,7 +7,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 
-import Lab1 from './Lab1';
+import Lab1 from './Lab1/Lab1';
 
 function App() {
   return (
