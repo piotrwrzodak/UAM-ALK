@@ -57,7 +57,7 @@
 
 .button {
   margin: 10px 0;
-  width: auto;
+  width: 200px;
   padding: 5px;
   height: 40px;
   background-color: rgb(46, 139, 87);
@@ -78,4 +78,10 @@
 .output-list__item {
   margin: 3px;
   font-size: 0.7rem;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  margin: 1.4rem 0 1rem;
 }
