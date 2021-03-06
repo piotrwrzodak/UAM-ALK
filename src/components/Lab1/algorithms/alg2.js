@@ -4,12 +4,13 @@ const alg2 = (n) => {
   finalSet.push(array);
 
   let i;
+  let newValue;
+
   while (true) {
     i = n - 1;
-    if (array[i] < i + 1) {
-      array = replaceElement(array, i, array[i] + 1);
-    } else if (array[i] === i + 1) {
-      while (array[i] === i + 1) {
+
+    if (array[i] === i + 1 || array[i] === 9) {
+      while (array[i] === i + 1 || array[i] === 9) {
         i--;
       }
       if (i < 0) break;
@@ -19,6 +20,9 @@ const alg2 = (n) => {
         array = replaceElement(array, i, 1);
         i++;
       }
+    } else if (array[i] < i + 1) {
+      newValue = array[i] + 1 < 9 ? array[i] + 1 : 9;
+      array = replaceElement(array, i, newValue);
     }
     finalSet.push(array);
   }
