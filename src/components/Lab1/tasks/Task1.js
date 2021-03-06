@@ -46,13 +46,16 @@ const Task1 = () => {
         </button>
       </form>
       {output && (
-        <ul className="output-list">
-          {output.map((array) => (
-            <li key={array} className="output-list__item">
-              {array}
-            </li>
-          ))}
-        </ul>
+        <>
+          <h3 className="output-size">Number of elements: {output.length}</h3>
+          <ul className="output-list">
+            {output.map((array) => (
+              <li key={array} className="output-list__item">
+                {array}
+              </li>
+            ))}
+          </ul>
+        </>
       )}
     </>
   );
