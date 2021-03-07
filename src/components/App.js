@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   NavLink,
@@ -19,7 +19,7 @@ function App() {
             <ul className="nav-list">
               <li className="nav-list__item">
                 <NavLink
-                  to="/UAM-ALK/lab1"
+                  to="/lab1"
                   className="item__link"
                   activeStyle={{
                     fontWeight: 'bold',
@@ -33,11 +33,11 @@ function App() {
           </nav>
 
           <Switch>
-            <Route path="/UAM-ALK/lab1">
+            <Route path="/lab1">
               <Lab1 />
             </Route>
-            <Route path="/UAM-ALK"></Route>
-            <Redirect to="/UAM-ALK" />
+            <Route path="/"></Route>
+            <Redirect to="/" />
           </Switch>
         </div>
       </Router>
