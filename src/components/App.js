@@ -19,7 +19,7 @@ function App() {
             <ul className="nav-list">
               <li className="nav-list__item">
                 <NavLink
-                  to="/lab1"
+                  to="/UAM-ALK/lab1"
                   className="item__link"
                   activeStyle={{
                     fontWeight: 'bold',
@@ -33,11 +33,11 @@ function App() {
           </nav>
 
           <Switch>
-            <Route path="/lab1">
+            <Route path="/UAM-ALK/lab1">
               <Lab1 />
             </Route>
-            <Route path="/"></Route>
-            <Redirect to="/" />
+            <Route path="/UAM-ALK"></Route>
+            <Redirect to="/UAM-ALK" />
           </Switch>
         </div>
       </Router>
