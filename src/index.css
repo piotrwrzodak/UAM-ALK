@@ -48,6 +48,9 @@
 .input {
   margin: 10px 30px;
   width: 200px;
+  border-color: seagreen;
+  border-radius: 2px;
+  padding: 2px 5px;
 }
 
 .variables {

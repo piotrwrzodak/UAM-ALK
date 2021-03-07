@@ -39,7 +39,11 @@ const Task2 = () => {
           <ul className="output-list">
             {output.map((array) => (
               <li key={array} className="output-list__item">
-                {array}
+                {array
+                  .reduce((a, b) => {
+                    return a.concat(b).concat(',');
+                  }, [])
+                  .slice(0, -1)}
               </li>
             ))}
           </ul>

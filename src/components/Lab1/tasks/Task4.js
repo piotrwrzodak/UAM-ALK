@@ -35,17 +35,19 @@ const Task4 = () => {
         <>
           <h3 className="output-size">Number of elements: {output.length}</h3>
           <ul className="output-list">
-            {output.map((array, index) =>
-              index === 0 ? (
-                <li key={index} className="output-list__item">
-                  ∅
-                </li>
-              ) : (
-                <li key={index} className="output-list__item">
-                  {array}
-                </li>
-              )
-            )}
+            {/* empty array cant display its elements and its not worth to check 2^n times if it is this set */}
+            <li key="empty" className="output-list__item">
+              ∅
+            </li>
+            {output.map((array, index) => (
+              <li key={index} className="output-list__item">
+                {array
+                  .reduce((a, b) => {
+                    return a.concat(b).concat(',');
+                  }, [])
+                  .slice(0, -1)}
+              </li>
+            ))}
           </ul>
         </>
       )}
