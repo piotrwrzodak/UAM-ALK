@@ -4,10 +4,10 @@ https://piotrwrzodak.github.io/UAM-ALK/
 
 ## Algorithms
 1. Lab1
-  * [alg1](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab1/algorithms/alg1.js)
-  * [alg2](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab1/algorithms/alg2.js)
-  * [alg3](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab1/algorithms/alg3.js)
-  * [alg4](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab1/algorithms/alg4.js)
+  i. [alg1](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab1/algorithms/alg1.js)
+  ii. [alg2](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab1/algorithms/alg2.js)
+  iii. [alg3](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab1/algorithms/alg3.js)
+  iv. [alg4](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab1/algorithms/alg4.js)
 
 ## Setup
 
