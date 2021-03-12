@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 
 import Lab1 from './Lab1/Lab1';
+import Lab2 from './Lab2/Lab2';
 
 function App() {
   return (
@@ -29,12 +30,27 @@ function App() {
                   lab1
                 </NavLink>
               </li>
+              <li className="nav-list__item">
+                <NavLink
+                  to="/lab2"
+                  className="item__link"
+                  activeStyle={{
+                    fontWeight: 'bold',
+                    textDecoration: 'underline',
+                  }}
+                >
+                  lab2
+                </NavLink>
+              </li>
             </ul>
           </nav>
 
           <Switch>
             <Route path="/lab1">
               <Lab1 />
+            </Route>
+            <Route path="/lab2">
+              <Lab2 />
             </Route>
             <Route path="/"></Route>
             <Redirect to="/" />
