@@ -15,13 +15,13 @@ const Task1 = () => {
 
   return (
     <>
-      <h2 className="heading">Zadanie 4</h2>
+      <h2 className="heading">Zadanie 1</h2>
       <form onSubmit={submitHandler} className="form">
         <p>
           Wpisz wartość n:
           <input
             type="number"
-            min="0"
+            min="1"
             name="n"
             className="input"
             onChange={(e) => {
@@ -34,6 +34,7 @@ const Task1 = () => {
           <input
             type="number"
             name="n"
+            min="0"
             className="input"
             onChange={(e) => setT(e.target.value)}
           />
