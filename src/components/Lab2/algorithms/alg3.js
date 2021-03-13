@@ -1,5 +1,5 @@
 let finalArray = [];
-let variables = { n: 0, k: 0 };
+let variables = { n: 1, k: 1 };
 
 const alg3 = (n, k) => {
   finalArray = [];

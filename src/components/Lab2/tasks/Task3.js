@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import alg3 from '../algorithms/alg3';
 
 const Task3 = () => {
-  const [n, setN] = useState(0);
-  const [k, setK] = useState(0);
+  const [n, setN] = useState(1);
+  const [k, setK] = useState(1);
   const [output, setOutput] = useState(null);
 
   const submitHandler = (e) => {
@@ -33,8 +33,8 @@ const Task3 = () => {
           Wpisz wartość k:
           <input
             type="number"
+            min="1"
             name="k"
-            min="0"
             placeholder={k}
             className="input"
             onChange={(e) => setK(e.target.value)}
