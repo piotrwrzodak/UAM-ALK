@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import alg2 from '../algorithms/alg2';
 
-const Task1 = () => {
+const Task2 = () => {
   const [n, setN] = useState(0);
   const [r, setR] = useState(0);
   const [output, setOutput] = useState(null);
@@ -22,6 +22,7 @@ const Task1 = () => {
             type="number"
             min="1"
             name="n"
+            placeholder={n}
             className="input"
             onChange={(e) => {
               setN(e.target.value);
@@ -33,6 +34,7 @@ const Task1 = () => {
           <input
             type="number"
             name="r"
+            placeholder={r}
             min="0"
             max={2 ** n - 1}
             className="input"
@@ -67,4 +69,4 @@ const Task1 = () => {
   );
 };
 
-export default Task1;
+export default Task2;

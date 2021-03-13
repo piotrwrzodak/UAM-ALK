@@ -1,9 +1,11 @@
-const alg1 = (n, t) => {
+const alg1 = (n, inputSubset) => {
   let array = [];
   let rank = 0;
 
-  if (t === 0) return 0;
+  let t = createArray(inputSubset);
+
   if (
+    inputSubset === '' ||
     t.length > n ||
     doesArrayHaveDuplicates(t) ||
     doesArrayContainWrongValues(t, n)
@@ -24,6 +26,16 @@ const alg1 = (n, t) => {
 
     return rank;
   }
+};
+
+const createArray = (subset) => {
+  let auxiliaryArray;
+  if (subset.includes(',')) {
+    auxiliaryArray = subset.split(',').map((value) => parseInt(value));
+  } else {
+    auxiliaryArray = [parseInt(subset)];
+  }
+  return auxiliaryArray;
 };
 
 const doesArrayHaveDuplicates = (array) => {

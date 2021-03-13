@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import alg3 from '../algorithms/alg3';
 
-const Task1 = () => {
+const Task3 = () => {
   const [n, setN] = useState(0);
   const [k, setK] = useState(0);
   const [output, setOutput] = useState(null);
@@ -22,6 +22,7 @@ const Task1 = () => {
             type="number"
             min="1"
             name="n"
+            placeholder={n}
             className="input"
             onChange={(e) => {
               setN(e.target.value);
@@ -34,6 +35,7 @@ const Task1 = () => {
             type="number"
             name="k"
             min="0"
+            placeholder={k}
             className="input"
             onChange={(e) => setK(e.target.value)}
           />
@@ -46,10 +48,6 @@ const Task1 = () => {
         <>
           <h3 className="output-size">Number of elements: {output.length}</h3>
           <ul className="output-list">
-            {/* empty array cant display its elements and its not worth to check 2^n times if it is this set */}
-            <li key="empty" className="output-list__item">
-              ∅
-            </li>
             {output.map((array, index) => (
               <li key={index} className="output-list__item">
                 {array
@@ -66,4 +64,4 @@ const Task1 = () => {
   );
 };
 
-export default Task1;
+export default Task3;

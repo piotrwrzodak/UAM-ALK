@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import alg1 from '../algorithms/alg1';
 
 const Task1 = () => {
-  const [n, setN] = useState(0);
-  const [t, setT] = useState(0);
+  const [n, setN] = useState(1);
+  const [t, setT] = useState('');
   const [output, setOutput] = useState(null);
 
   const submitHandler = (e) => {
@@ -23,6 +23,7 @@ const Task1 = () => {
             type="number"
             min="1"
             name="n"
+            placeholder={n}
             className="input"
             onChange={(e) => {
               setN(e.target.value);
@@ -32,9 +33,10 @@ const Task1 = () => {
         <p>
           Wpisz podzbiór T:
           <input
-            type="number"
-            name="n"
-            min="0"
+            type="text"
+            name="t"
+            placeholder="np. 1,3,12"
+            pattern="((([0-9]{1,},){1,})||[0-9]{1,})+"
             className="input"
             onChange={(e) => setT(e.target.value)}
           />
