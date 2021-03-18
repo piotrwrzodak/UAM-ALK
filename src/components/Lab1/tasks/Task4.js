@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import alg4 from '../algorithms/alg4';
 
-const Task4 = () => {
+const Task4 = ({ number }) => {
   const [n, setN] = useState(0);
   const [output, setOutput] = useState(null);
 
@@ -14,7 +14,7 @@ const Task4 = () => {
 
   return (
     <>
-      <h2 className="heading">Zadanie 4</h2>
+      <h2 className="heading">Zadanie {number}</h2>
       <form onSubmit={submitHandler} className="form">
         <p>
           Wpisz wartość n:
