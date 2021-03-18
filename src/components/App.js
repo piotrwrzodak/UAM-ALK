@@ -9,6 +9,7 @@ import {
 
 import Lab1 from './Lab1/Lab1';
 import Lab2 from './Lab2/Lab2';
+import Lab3 from './Lab3/Lab3';
 
 function App() {
   return (
@@ -42,6 +43,18 @@ function App() {
                   lab2
                 </NavLink>
               </li>
+              <li className="nav-list__item">
+                <NavLink
+                  to="/lab3"
+                  className="item__link"
+                  activeStyle={{
+                    fontWeight: 'bold',
+                    textDecoration: 'underline',
+                  }}
+                >
+                  lab3
+                </NavLink>
+              </li>
             </ul>
           </nav>
 
@@ -51,6 +64,9 @@ function App() {
             </Route>
             <Route path="/lab2">
               <Lab2 />
+            </Route>
+            <Route path="/lab3">
+              <Lab3 />
             </Route>
             <Route path="/"></Route>
             <Redirect to="/" />
