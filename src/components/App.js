@@ -13,6 +13,23 @@ import Lab3 from './Lab3/Lab3';
 import Lab4 from './Lab4/Lab4';
 
 function App() {
+  const AppLink = (props) => {
+    return (
+      <li className="nav-list__item">
+        <NavLink
+          to={props.to}
+          className="item__link"
+          activeStyle={{
+            fontWeight: 'bold',
+            textDecoration: 'underline',
+          }}
+        >
+          {props.to}
+        </NavLink>
+      </li>
+    );
+  };
+
   return (
     <div className="app-container">
       <h1 className="app-container__heading">Algorytmy Kombinatoryczne</h1>
@@ -20,54 +37,10 @@ function App() {
         <div>
           <nav>
             <ul className="nav-list">
-              <li className="nav-list__item">
-                <NavLink
-                  to="/lab1"
-                  className="item__link"
-                  activeStyle={{
-                    fontWeight: 'bold',
-                    textDecoration: 'underline',
-                  }}
-                >
-                  lab1
-                </NavLink>
-              </li>
-              <li className="nav-list__item">
-                <NavLink
-                  to="/lab2"
-                  className="item__link"
-                  activeStyle={{
-                    fontWeight: 'bold',
-                    textDecoration: 'underline',
-                  }}
-                >
-                  lab2
-                </NavLink>
-              </li>
-              <li className="nav-list__item">
-                <NavLink
-                  to="/lab3"
-                  className="item__link"
-                  activeStyle={{
-                    fontWeight: 'bold',
-                    textDecoration: 'underline',
-                  }}
-                >
-                  lab3
-                </NavLink>
-              </li>
-              <li className="nav-list__item">
-                <NavLink
-                  to="/lab4"
-                  className="item__link"
-                  activeStyle={{
-                    fontWeight: 'bold',
-                    textDecoration: 'underline',
-                  }}
-                >
-                  lab4
-                </NavLink>
-              </li>
+              <AppLink to="lab1" />
+              <AppLink to="lab2" />
+              <AppLink to="lab3" />
+              <AppLink to="lab4" />
             </ul>
           </nav>
 
@@ -84,7 +57,7 @@ function App() {
             <Route path="/lab4">
               <Lab4 />
             </Route>
-            <Route path="/"></Route>
+            <Route path="/" />
             <Redirect to="/" />
           </Switch>
         </div>
