@@ -60,7 +60,8 @@
 
 .button {
   margin: 10px 0;
-  width: 200px;
+  min-width: 200px;
+  width: auto;
   padding: 5px;
   height: 40px;
   background-color: rgb(46, 139, 87);
