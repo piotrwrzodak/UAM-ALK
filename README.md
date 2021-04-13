@@ -1,5 +1,7 @@
 # UAM - Algorytmy Kombinatoryczne
 
+Code is not DRY. The most important part of this project are algorithms and because of that I want to keep it simple.
+
 https://piotrwrzodak.github.io/UAM-ALK/
 
 ## Algorithms
@@ -21,6 +23,10 @@ https://piotrwrzodak.github.io/UAM-ALK/
    1. [alg1](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab4/algorithms/alg1.js)
    2. [alg2](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab4/algorithms/alg2.js)
    3. [alg3](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab4/algorithms/alg3.js)
+5. Lab5
+   1. [alg1](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab5/algorithms/alg1.js)
+   2. [alg2](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab5/algorithms/alg2.js)
+   3. [alg3](https://github.com/piotrwrzodak/UAM-ALK/blob/master/src/components/Lab5/algorithms/alg3.js)
 
 ## Setup
 
