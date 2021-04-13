@@ -11,6 +11,7 @@ import Lab1 from './Lab1/Lab1';
 import Lab2 from './Lab2/Lab2';
 import Lab3 from './Lab3/Lab3';
 import Lab4 from './Lab4/Lab4';
+import Lab5 from './Lab5/Lab5';
 
 function App() {
   const AppLink = (props) => {
@@ -41,6 +42,7 @@ function App() {
               <AppLink to="lab2" />
               <AppLink to="lab3" />
               <AppLink to="lab4" />
+              <AppLink to="lab5" />
             </ul>
           </nav>
 
@@ -56,6 +58,9 @@ function App() {
             </Route>
             <Route path="/lab4">
               <Lab4 />
+            </Route>
+            <Route path="/lab5">
+              <Lab5 />
             </Route>
             <Route path="/" />
             <Redirect to="/" />
