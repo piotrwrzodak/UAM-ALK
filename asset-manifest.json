@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/UAM-ALK/static/css/main.36b0775d.chunk.css",
-    "main.js": "/UAM-ALK/static/js/main.bbafbd8d.chunk.js",
-    "main.js.map": "/UAM-ALK/static/js/main.bbafbd8d.chunk.js.map",
+    "main.css": "/UAM-ALK/static/css/main.40221a3f.chunk.css",
+    "main.js": "/UAM-ALK/static/js/main.3b1bca8f.chunk.js",
+    "main.js.map": "/UAM-ALK/static/js/main.3b1bca8f.chunk.js.map",
     "runtime-main.js": "/UAM-ALK/static/js/runtime-main.b81ed082.js",
     "runtime-main.js.map": "/UAM-ALK/static/js/runtime-main.b81ed082.js.map",
-    "static/js/2.97bb7633.chunk.js": "/UAM-ALK/static/js/2.97bb7633.chunk.js",
-    "static/js/2.97bb7633.chunk.js.map": "/UAM-ALK/static/js/2.97bb7633.chunk.js.map",
+    "static/js/2.db5f6b5b.chunk.js": "/UAM-ALK/static/js/2.db5f6b5b.chunk.js",
+    "static/js/2.db5f6b5b.chunk.js.map": "/UAM-ALK/static/js/2.db5f6b5b.chunk.js.map",
     "index.html": "/UAM-ALK/index.html",
-    "static/css/main.36b0775d.chunk.css.map": "/UAM-ALK/static/css/main.36b0775d.chunk.css.map",
-    "static/js/2.97bb7633.chunk.js.LICENSE.txt": "/UAM-ALK/static/js/2.97bb7633.chunk.js.LICENSE.txt"
+    "static/css/main.40221a3f.chunk.css.map": "/UAM-ALK/static/css/main.40221a3f.chunk.css.map",
+    "static/js/2.db5f6b5b.chunk.js.LICENSE.txt": "/UAM-ALK/static/js/2.db5f6b5b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b81ed082.js",
-    "static/js/2.97bb7633.chunk.js",
-    "static/css/main.36b0775d.chunk.css",
-    "static/js/main.bbafbd8d.chunk.js"
+    "static/js/2.db5f6b5b.chunk.js",
+    "static/css/main.40221a3f.chunk.css",
+    "static/js/main.3b1bca8f.chunk.js"
   ]
 }
