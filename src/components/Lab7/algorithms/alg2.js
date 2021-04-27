@@ -1,7 +1,7 @@
 const alg2 = (n, array) => {
   let newArray = createArrayFromString(array, n);
   if (!newArray) {
-    return false;
+    return 'bad input';
   }
 
   // find the biggest value

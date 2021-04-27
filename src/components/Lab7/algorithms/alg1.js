@@ -1,7 +1,7 @@
 const alg1 = (n, subsets) => {
   const array = parseArray(n, subsets);
   if (!array) {
-    return 'false';
+    return 'bad input';
   }
 
   let rgfArray = [];
