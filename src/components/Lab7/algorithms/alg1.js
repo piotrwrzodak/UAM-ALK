@@ -31,6 +31,7 @@ const parseArray = (n, subsets) => {
   let matched;
   let number;
   let sumControl = 0;
+  let controlDuplicatesArray = [];
   let finalArray = [];
 
   const auxArray = [...subsets.match(regexp1)];
@@ -43,13 +44,18 @@ const parseArray = (n, subsets) => {
         return false;
       }
       finalArray[i].push(number);
+      controlDuplicatesArray.push(number);
       sumControl++;
     }
   }
-  if (sumControl !== n) {
+  if ((sumControl !== n) | doesArrayContainDuplicates(controlDuplicatesArray)) {
     return false;
   }
   return finalArray;
+};
+
+const doesArrayContainDuplicates = (array) => {
+  return array.length !== new Set(array).size;
 };
 
 export default alg1;
