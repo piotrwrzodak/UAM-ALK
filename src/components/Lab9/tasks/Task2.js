@@ -3,13 +3,12 @@ import React, { useState } from 'react';
 import alg2 from '../algorithms/alg2';
 
 const Task2 = () => {
-  const [n, setN] = useState(1);
   const [p, setP] = useState('');
   const [output, setOutput] = useState(null);
 
   const submitHandler = (e) => {
     e.preventDefault();
-    let out = alg2(n, p);
+    let out = alg2(p);
     setOutput(out);
   };
 
@@ -17,19 +16,6 @@ const Task2 = () => {
     <>
       <h2 className="heading">Zadanie 2</h2>
       <form onSubmit={submitHandler} className="form">
-        <p>
-          Wpisz wartość n:
-          <input
-            type="number"
-            min="1"
-            name="n"
-            placeholder={n}
-            className="input"
-            onChange={(e) => {
-              setN(e.target.value);
-            }}
-          />
-        </p>
         <p>
           Wpisz permutacje P:
           <input
@@ -42,12 +28,12 @@ const Task2 = () => {
           />
         </p>
         <button type="submit" className="button">
-          Generuj dla n={n} i P={p}
+          Generuj dla P={p}
         </button>
       </form>
       {output !== null && (
         <>
-          <h3 className="output-size">Wartosc:</h3>
+          <h3 className="output-size">Podział sprzezony:</h3>
           <ul className="output-list">
             <li className="output-list__item">{output}</li>
           </ul>
